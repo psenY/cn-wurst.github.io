@@ -6,7 +6,7 @@
 <head>
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-<title>WurstClien-CN</title>
+<title>WurstClien-中文站</title>
 <meta name="description" content="">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
@@ -21,7 +21,17 @@
 <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
 
 <style>
+#INDEXT_RB_AD{ 
+	clear:both; width:300px; height:50px; z-index:1000; overflow:hidden; border:0px #ccc solid; 
+	bottom:0px; right:0px; 
 
+	/* 火狐、Google浏览器只需要后面这一句代码即可 */ 
+	position:fixed !important; 
+
+	/* 以下代码是针对IE6的 */ 
+	_position:absolute; 
+	_top: expression( eval( document.documentElement.scrollTop + document.documentElement.clientHeight - this.offsetHeight - (parseInt(this.currentStyle.marginTop,10)||0) - (parseInt(this.currentStyle.marginBottom,10)||0) ) - (parseInt(this.currentStyle.bottom,10)||0) ); 
+}
 </style>
 </head>
 <body oncontextmenu="return false;" onselectstart="return false">
@@ -49,6 +59,7 @@
   </ul>
 </nav>
 
+
 <section class="panel b-blue" id="1">
   <article class="panel__wrapper">
 	<div class="panel__content">
@@ -60,6 +71,17 @@
 			    <h1 align="center"><img src="https://cloud.githubusercontent.com/assets/10100202/23872350/47e8462e-082e-11e7-8ac2-07a66e4beaaa.png" alt="Minecraft Wurst Hacked Client" width="379" height="96"><br/>Wurst 客户端</h1>
 			    
 				<br>
+				
+					<div class="alert alert-info alert-dismissable">
+						<button type="button" class="close" data-dismiss="alert"
+							aria-hidden="true">
+							&times;
+						</button>
+							你正在浏览非官方中文站
+					</div>
+					
+				
+				
 				<p align="center" style="border-left:8px solid #2196F3;background-color: #ddffff;font-size:20px">现已支持中文！</p>
 				
 				<div class="home-box-content">
@@ -102,6 +124,7 @@
 	</div>
   </article>
 </section>
+
 <!--
 <section class="panel b-red" id="3">
   <article class="panel__wrapper">
